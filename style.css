@@ -1,0 +1,316 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    height: 286vh;
+    /* scrollbar */
+}
+.p-text h3{
+    font-size: 20px;
+}
+
+.sticky{
+    position: sticky;
+    top:0px;
+     transition: all 0.5s ease-out; 
+}
+.nav{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: darken;
+    
+    
+    
+}
+.navbar{
+    display: flex;
+    width: 50%;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+
+}
+.navbar a{
+   text-decoration: none;
+    color: white;
+}
+.logo-img img{
+    width: 70px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin: 12px 92px
+}
+.navbar li a:hover,.navbar li a.active{
+    text-decoration: underline;
+    color: grey;
+    }
+.navbar li{
+    padding:12px
+}
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.pad{
+    margin: 4px 8px;
+}
+.btn{
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 2px;
+}
+
+
+
+header.active{
+    position: sticky;
+    top: 0px;
+    background-color:rgba(0, 0, 0, 0.9);
+    transition: all 1.55s ease-out;
+}
+
+/* -----------------------------------------------first section is about clock------------------------------------------------------- */
+
+.clock{
+    display: flex;
+    text-align: center;
+    margin-top: 12px;
+     /* background-color: rgba(0, 0, 0, 0.3); */
+    
+}
+.back{
+    background:  url(img/time.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* rgba(54,56,58,0.5) */
+  .clock-img{
+   
+    margin-right: 15px;
+    margin-top: 12px;
+    height: 100%;
+
+   
+    
+}  
+.clock-img img{
+    height: 50vh;
+    opacity: 0.4; 
+    
+}
+
+.p-text{
+    margin-top: 12px;
+}
+
+.p-text p {
+    margin-top: 12px;
+    text-align: justify;
+    margin-left: 11px;
+    margin-right: 12px;
+}
+
+
+
+#clock{
+    position: relative; 
+}
+
+#hour ,#minute, #sec{
+    position: absolute;
+    background-color: black;
+    border: 20px;
+   transform-origin: bottom;
+  
+  
+  
+}
+#hour{
+     height: 21.5%;
+    width: 1.71%;
+    top: 27.3%;
+    left: 49.1%;
+    opacity: 0.8; 
+   
+}
+ #minute{
+     height: 26.5%;
+    width: 1.4%;
+    top: 22.4%;
+    left: 49.355%;
+    opacity: 0.8;
+
+    
+    
+} 
+#sec{
+     height: 33.5%;
+    width: 1%;
+    top: 15.2%;
+    left: 49.4%;
+    opacity: 0.8; 
+   
+
+}
+
+
+
+
+
+
+
+/* second section is about wheat */
+.wheat{
+    
+    margin-top: 42px;
+    text-align: center;
+    background: rgba(114, 165, 207, 0.3) url(img/wheat3.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+
+#services{
+    margin-top: -35px;
+}
+
+/* THIRD SECTION IS ABOUT RICE */
+
+.rice{
+    margin-top: -5px;
+    text-align: center;
+    background:  rgba(114, 165, 207, 0.3) url(img/rice23.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* rgba(114, 165, 207, 0.3) */
+
+
+
+/* ----fourth section is about sugercane------------ */
+.sugercane{
+    margin-top: -5px;
+    text-align: center;
+    background: rgba(114, 165, 207, 0.3)url(img/suger.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* fifth section is about form */
+.form{
+    margin-top: -91px;
+    text-align: center;
+    background-color: rgba(114, 165, 207, 0.3);
+}
+.hello{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ #form-n{
+    margin-top: 100px;
+} 
+.padd-f{
+    padding: 12px 12px;
+    margin: 12px 12px; 
+    font-size: 20px;
+    border-radius: 9px;
+}
+
+.btn-p{
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: whitesmoke;
+}
+
+
+
+/* footer */
+#foot{
+    text-align: center;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    
+    
+
+}
+
+
+
+/* media querry */
+
+
+
+@media only screen and (max-width:770px){
+    .clock {
+        
+        flex-direction: column-reverse;
+        
+       
+}
+.nav {
+    
+    flex-direction: column;
+   
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.navbar li {
+   
+    margin-right: 0px;
+}
+.navbar{
+    width: auto;
+}
+}
+
+
+
+
+@media only screen and (max-width:600px){
+    .navbar{
+        flex-direction: column;
+        
+    }
+    .nav{
+        height: 310px;
+        transition: all 0.5s ease-out;
+    }
+
+
+    .burger{
+position: absolute;
+top: 25px;
+right: 15px;
+
+    }
+    .line{
+        width: 33px;
+        height: 3px;
+      background-color: white;
+        margin: 3px 3px;
+    }
+    .h-nav{
+        height: 65px;
+        
+    }
+     .nav-visibility{
+       display: none;
+    } 
+}
